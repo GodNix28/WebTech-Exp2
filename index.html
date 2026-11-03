@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Ex.No 02 - HTML5 Form and Media Elements</title>
+</head>
+<body>
+
+  <!-- ===================== HEADER / TITLE ===================== -->
+  <h1>My HTML5 Showcase Page</h1>
+  <p>Ex.No 02 - Working with HTML5 Form and Media Elements</p>
+
+  <!-- ===================== INTRO SECTION ===================== -->
+  <h2>About This Page</h2>
+  <div>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRbhfLRmYeoyGMw4MDnSFPkzVk92sG0s5za1Ks3YEogg&s" alt="Sample hero photo">
+    <p>
+      This page was built for the HTML5 lab exercise. It demonstrates structural tags,
+      form controls, and native media playback in a single standards-compliant document.
+      Learn more about the specification on the
+      <a href="https://html.spec.whatwg.org/" target="_blank">official HTML Living Standard</a>.
+    </p>
+  </div>
+
+  <!-- ===================== TABLE ===================== -->
+  <h2>Sample Table</h2>
+  <table border="5">
+    <tr>
+      <th>Element</th>
+      <th>Category</th>
+      <th>Purpose</th>
+    </tr>
+    <tr>
+      <td>&lt;form&gt;</td>
+      <td>Form</td>
+      <td>Collects user input</td>
+    </tr>
+    <tr>
+      <td>&lt;video&gt;</td>
+      <td>Media</td>
+      <td>Plays video natively</td>
+    </tr>
+    <tr>
+      <td>&lt;table&gt;</td>
+      <td>Structure</td>
+      <td>Displays tabular data</td>
+    </tr>
+  </table>
+
+  <!-- ===================== FORM SECTION ===================== -->
+  <h2>Registration Form</h2>
+  <form action="/submit_page.php" method="post">
+
+    <fieldset>
+      <legend>Personalia</legend>
+
+      <p>
+        <label for="fname">First Name:</label>
+        <input type="text" id="fname" name="fname" placeholder="Enter first name" required>
+      </p>
+
+      <p>
+        <label for="lname">Last Name:</label>
+        <input type="text" id="lname" name="lname" placeholder="Enter last name" required>
+      </p>
+
+      <p>
+        <label for="email">Email:</label>
+        <input type="email" id="iemail" name="email" placeholder="you@example.com">
+      </p>
+
+      <p>
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob">
+      </p>
+
+      <p>
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" placeholder="+91 9xxxxxxxxx">
+      </p>
+
+      <p>
+        <label for="pass">Password:</label>
+        <input type="password" id="pass" name="pass">
+      </p>
+    </fieldset>
+
+    <fieldset>
+      <legend>Preferences</legend>
+
+      <p>
+        <label for="country">Country:</label>
+        <select id="country" name="country">
+          <option value="">-- Select --</option>
+          <option value="india">India</option>
+          <option value="usa">USA</option>
+          <option value="uk">UK</option>
+          <option value="other">Other</option>
+        </select>
+      </p>
+
+      <p>
+        <label>Gender:</label>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>  
+      </p>
+
+      <p>
+        <label>Hobbies:</label>
+        <input type="checkbox" id="reading" name="hobbies" value="reading">
+        <label for="reading">Reading</label>
+        <input type="checkbox" id="sports" name="hobbies" value="sports">
+        <label for="sports">Sports</label>
+      </p>
+
+      <p>
+        <label for="rating">Satisfaction:</label>
+        <input type="range" id="rating" name="rating" min="0" max="10">
+      </p>
+
+      <p>
+        <label for="photo">Upload Photo:</label>
+        <input type="file" id="photo" name="photo">
+      </p>
+
+      <p>
+        <label for="msg">Message:</label><br>
+        <textarea id="msg" name="msg" rows="4" cols="30" placeholder="Type your message here"></textarea>
+      </p>
+
+      <input type="hidden" name="form_id" value="lab_ex02">
+    </fieldset>
+
+    <p>
+      <label for="upload_progress">Upload Progress:</label>
+      <progress id="upload_progress" value="60" max="100">60%</progress>
+    </p>
+
+    <input type="submit" value="Submit">
+    <input type="reset" value="Reset">
+  </form>
+
+  <!-- ===================== MEDIA SECTION ===================== -->
+  <h2>Audio</h2>
+  <audio controls>
+    <source src="https://www.w3schools.com/html/horse.ogg" type="audio/ogg">
+    <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <h2>Video</h2>
+  <video width="400" controls>
+    <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+    <source src="https://www.w3schools.com/html/mov_bbb.ogg" type="video/ogg">
+    Your browser does not support the video element.
+  </video>
+
+  <h2>Embedded Content (embed tag)</h2>
+  <embed src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4" width="400" height="300">
+
+  <h2>Embedded Page (iframe tag)</h2>
+  <iframe src="https://www.w3schools.com" width="500" height="250" title="Sample iframe content"></iframe>
+
+  <!-- ===================== FOOTER ===================== -->
+  <hr>
+  <p>&copy; 2026 HTML5 Lab Exercise. Built for Ex.No 02 - Working with Form and Media Elements.</p>
+
+</body>
+</html>
